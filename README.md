@@ -4,8 +4,8 @@ buddycloud-atom-validator
 Plugin for the Buddycloud server to validate Atom payloads. 
 
 This plugin was created while adding plugin support to the
-Buddycloud server. Note that *the features provided by this 
-plugin are built into the Buddycloud server by default*. 
+Buddycloud server. Note that **the features provided by this 
+plugin are built into the Buddycloud server by default**. 
 
 Installation
 ---------
