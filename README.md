@@ -12,4 +12,4 @@ Installation
 
 1. Build this component: `mvn package`.
 2. Copy `atom-validator-jar-with-dependencies.jar` from the `target` directory to your Buddycloud `plugins` directory.
-3. Restart your Buddyclouyd server.
+3. Restart your Buddycloud server.
