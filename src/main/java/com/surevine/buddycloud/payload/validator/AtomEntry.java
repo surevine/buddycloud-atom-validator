@@ -5,7 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import net.xeoh.plugins.base.annotations.Capabilities;
 import net.xeoh.plugins.base.annotations.PluginImplementation;
+
 import org.apache.log4j.Logger;
 import org.buddycloud.channelserver.channel.ChannelManager;
 import org.buddycloud.channelserver.channel.Conf;
@@ -398,10 +400,8 @@ public class AtomEntry implements PayloadValidator {
     }
 
     @Override
-    public boolean canValidate(String contentType) {
-        if (null == contentType) {
-            return true;
-        }
-        return contentType.equals(Atom.NS);
+    @Capabilities
+    public String[] capabilities() {
+        return new String[] {null, Atom.NS};
     }
 }
